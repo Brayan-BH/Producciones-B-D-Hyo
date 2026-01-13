@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>B &amp; D Producciones | Excelencia Audiovisual</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+   <link rel="stylesheet" href="css/styes.css">
+  </head>
+  <body
+    class="bg-custom-main font-display text-custom-body antialiased overflow-x-hidden theme-transition"
+  >
+    <header
+      class="sticky top-0 z-50 w-full bg-[var(--header-bg)] backdrop-blur-md border-b border-custom"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16 sm:h-20">
+          <div class="flex items-center gap-3">
+            <div
+              class="size-8 bg-primary rounded flex items-center justify-center text-brand-blue shadow-[0_0_15px_rgba(19,236,91,0.4)]"
+            >
+              <span class="material-symbols-outlined font-bold">videocam</span>
+            </div>
+            <span
+              class="dark:text-white text-brand-blue text-xl font-black tracking-tighter"
+              >B &amp; D <span class="text-primary">PROD.</span></span
+            >
+          </div>
+          <nav class="hidden md:flex items-center gap-8">
+            <a
+              class="text-sm font-semibold hover:text-primary transition-colors"
+              href="#services"
+              >Servicios</a
+            >
+            <a
+              class="text-sm font-semibold hover:text-primary transition-colors"
+              href="#pricing"
+              >Planes</a
+            >
+            <a
+              class="text-sm font-semibold hover:text-primary transition-colors"
+              href="#portfolio"
+              >Portafolio</a
+            >
+            <a
+              class="text-sm font-semibold hover:text-primary transition-colors"
+              href="#faq"
+              >FAQ</a
+            >
+            <a
+              class="text-sm font-semibold hover:text-primary transition-colors"
+              href="#contact"
+              >Contacto</a
+            >
+            <div
+              class="flex items-center bg-gray-200 dark:bg-zinc-800 p-1 rounded-full border border-custom theme-switcher-container"
+            >
+              <button
+                class="theme-btn p-1.5 rounded-full hover:bg-white dark:hover:bg-zinc-700 transition-all text-gray-500 dark:text-gray-400"
+                id="theme-light-btn"
+                onclick="setTheme('light')"
+              >
+                <span class="material-symbols-outlined text-sm block"
+                  >light_mode</span
+                >
+              </button>
+              <button
+                class="theme-btn p-1.5 rounded-full hover:bg-white dark:hover:bg-zinc-700 transition-all text-gray-500 dark:text-gray-400"
+                id="theme-dark-btn"
+                onclick="setTheme('dark')"
+              >
+                <span class="material-symbols-outlined text-sm block"
+                  >dark_mode</span
+                >
+              </button>
+              <button
+                class="theme-btn p-1.5 rounded-full hover:bg-white dark:hover:bg-zinc-700 transition-all text-gray-500 dark:text-gray-400"
+                id="theme-system-btn"
+                onclick="setTheme('system')"
+              >
+                <span class="material-symbols-outlined text-sm block"
+                  >desktop_windows</span
+                >
+              </button>
+            </div>
+            <a
+              class="bg-primary hover:bg-primary/90 text-brand-blue px-5 py-2 rounded-lg text-sm font-bold transition-all transform hover:scale-105 shadow-[0_0_15px_rgba(19,236,91,0.3)]"
+              href="https://wa.me/51936649213?text=Hola,%20deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios"
+              target="_blank"
+            >
+              Solicitar información
+            </a>
+          </nav>
+          <button
+            class="md:hidden p-2 text-brand-blue dark:text-white"
+            onclick="document.getElementById('mobile-menu').classList.toggle('active')"
+          >
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+        </div>
+      </div>
+      <div
+        class="md:hidden bg-custom-main border-b border-custom"
+        id="mobile-menu"
+      >
+        <div class="px-4 py-6 space-y-4">
+          <a
+            class="block text-lg font-semibold hover:text-primary transition-colors"
+            href="#services"
+            onclick="document.getElementById('mobile-menu').classList.remove('active')"
+            >Servicios</a
+          >
+          <a
+            class="block text-lg font-semibold hover:text-primary transition-colors"
+            href="#pricing"
+            onclick="document.getElementById('mobile-menu').classList.remove('active')"
+            >Planes</a
+          >
+          <a
+            class="block text-lg font-semibold hover:text-primary transition-colors"
+            href="#portfolio"
+            onclick="document.getElementById('mobile-menu').classList.remove('active')"
+            >Portafolio</a
+          >
+          <a
+            class="block text-lg font-semibold hover:text-primary transition-colors"
+            href="#faq"
+            onclick="document.getElementById('mobile-menu').classList.remove('active')"
+            >FAQ</a
+          >
+          <a
+            class="block text-lg font-semibold hover:text-primary transition-colors"
+            href="#contact"
+            onclick="document.getElementById('mobile-menu').classList.remove('active')"
+            >Contacto</a
+          >
+          <div class="pt-4 border-t border-custom">
+            <p
+              class="text-sm opacity-60 mb-3 font-bold uppercase tracking-widest"
+            >
+              Tema
+            </p>
+            <div class="flex items-center gap-2">
+              <button
+                class="flex-1 flex items-center justify-center gap-2 py-2 rounded-lg border border-custom hover:bg-primary/10 transition-colors"
+                onclick="setTheme('light')"
+              >
+                <span class="material-symbols-outlined text-sm"
+                  >light_mode</span
+                >
+                Light
+              </button>
+              <button
+                class="flex-1 flex items-center justify-center gap-2 py-2 rounded-lg border border-custom hover:bg-primary/10 transition-colors"
+                onclick="setTheme('dark')"
+              >
+                <span class="material-symbols-outlined text-sm">dark_mode</span>
+                Dark
+              </button>
+              <button
+                class="flex-1 flex items-center justify-center gap-2 py-2 rounded-lg border border-custom hover:bg-primary/10 transition-colors"
+                onclick="setTheme('system')"
+              >
+                <span class="material-symbols-outlined text-sm"
+                  >desktop_windows</span
+                >
+                System
+              </button>
+            </div>
+          </div>
+          <div class="pt-6">
+            <a
+              class="block w-full text-center bg-primary text-brand-blue py-3 rounded-xl font-bold"
+              href="https://wa.me/51936649213?text=Hola,%20deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios"
+              target="_blank"
+            >
+              Solicitar información
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="relative hero-gradient py-24 lg:py-40 px-4 overflow-hidden">
+      <div class="max-w-5xl mx-auto text-center relative z-10">
+        <div
+          class="inline-block border-4 border-white/20 p-6 md:p-12 mb-8 glass-card rounded-2xl"
+        >
+          <h1
+            class="text-white text-5xl md:text-8xl font-black leading-none tracking-tighter uppercase drop-shadow-2xl"
+          >
+            PRODUCCIONES <br />
+            B &amp; D
+          </h1>
+        </div>
+        <div class="max-w-2xl mx-auto">
+          <h2
+            class="text-white/80 text-xl md:text-2xl font-light mb-12 italic tracking-wide"
+          >
+            "Capturamos momentos, creamos historias cinematográficas"
+          </h2>
+          <div class="flex flex-col sm:flex-row gap-5 justify-center">
+            <a
+              class="bg-white text-brand-blue px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary transition-all shadow-xl"
+              href="#portfolio"
+            >
+              Ver Portafolio
+            </a>
+            <a
+              class="border-2 border-primary/50 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary hover:text-brand-blue hover:border-primary transition-all bg-white/5 backdrop-blur-sm"
+              href="https://wa.me/51936649213?text=Hola,%20deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios"
+              target="_blank"
+            >
+              Contactar Ahora
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="absolute top-0 left-0 w-full h-full opacity-30 pointer-events-none"
+      >
+        <div
+          class="absolute top-1/4 left-10 w-64 h-64 bg-primary/20 rounded-full blur-[120px]"
+        ></div>
+        <div
+          class="absolute bottom-1/4 right-10 w-96 h-96 bg-brand-blue/40 rounded-full blur-[150px]"
+        ></div>
+      </div>
+    </section>
+    <section class="py-24 px-4 bg-custom-main">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
+      >
+        <div class="relative h-[400px] md:h-[500px]">
+          <div
+            class="absolute top-0 left-0 w-4/5 h-4/5 rounded-2xl overflow-hidden shadow-2xl z-30 transform -rotate-3 border-4 border-custom"
+          >
+            <div
+              class="w-full h-full bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-700"
+              style="
+                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBTBEyjDQknyJb9ofQVqyTPsy-iPbWZYxomTR3ixHcwejvPxdKCE81zcBKueyla9UbaXS63YxhL11IguXspi987xobOdSuemp2zEc-y_O7R9ae59d3l45DXRl80XBLXEqjtqV5A15TLikMiLpF9_DwpZEdTrNMxkk0eJpt6G9XlhcuEuXaYEhZ1KbeRnleXRwHPA_E6u9-m_rXLUq0s-p075iSg-iqa2Zo59WdJMm1IZng24oKGHNj8KScwE8zezjdCE2WD-bFcXXo8');
+              "
+            ></div>
+          </div>
+          <div
+            class="absolute top-10 left-20 w-4/5 h-4/5 rounded-2xl overflow-hidden shadow-2xl z-20 transform rotate-2 border-4 border-custom"
+          >
+            <div
+              class="w-full h-full bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-700"
+              style="
+                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDX-RW8Q4RjGIal-pkLBC5Q9T35Dt57rxS9amzjNt_3vMbxB4mm9OVGhcfBpKXuHWdvKduM09lkaCRpe0p2-SlwqGHeG0JMKPUvLyuwZL9-p9FbxwFjtzVOYO1l-fDwjmCcEI184TbQkxkg0_fmJVHIHpNwR7i8UYLPn5Y_K5YFsyUTVZHdYcCbkpsr_qRdMkkDzsUAfSx2-94PHacXT5Xhs0vCDAZwfYZ2PxmyiQrnIoVNNOnD3E44PyheqqsNuQ3V3vJlg66L3H0A');
+              "
+            ></div>
+          </div>
+          <div
+            class="absolute bottom-0 right-0 w-3/4 h-3/4 rounded-2xl overflow-hidden shadow-2xl z-10 transform -rotate-6 border-4 border-custom"
+          >
+            <div
+              class="w-full h-full bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-700"
+              style="
+                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDXhk1DKZ2SgbdsirPe4_pM7K7_qpJj-7Snw-WXEVV8CeQp86YEKXsKkV0gPu3Hd8BnK_I6cqn2uM2iHNCYR0T76UPxnr6VJhNq0ipBJN0fZH79trqDmZZPZBTlgkl8aR43h4xciOKyvKoTsv5tEBB3hwNxqi2AND0WscoNtTjpIbjbfJHebY2_YU2PkPcIjluZaf2muQpYwxvDqyuwj-rQ3VoT7s93RuCgggxadjfTHAJnVYG395KGkuW9xRXSc70J3vWEjsvcoSK3');
+              "
+            ></div>
+          </div>
+        </div>
+        <div class="space-y-6">
+          <span
+            class="text-primary font-bold tracking-[0.3em] uppercase text-xs"
+            >Mística &amp; Técnica</span
+          >
+          <h2
+            class="text-4xl md:text-5xl font-black dark:text-white text-brand-blue leading-tight"
+          >
+            Excelencia Audiovisual en Cada Fotograma
+          </h2>
+          <p class="opacity-80 text-lg leading-relaxed">
+            Somos un equipo apasionado dedicado a transformar visiones en
+            realidades cinematográficas. Ya sea un evento social íntimo o una
+            producción corporativa de gran escala, aportamos la técnica y la
+            creatividad necesarias para que tus recuerdos perduren para siempre.
+          </p>
+          <div class="flex flex-wrap gap-3 pt-4">
+            <span
+              class="px-4 py-2 bg-custom-surface rounded-full text-xs font-bold border border-custom text-primary"
+              >Bodas</span
+            >
+            <span
+              class="px-4 py-2 bg-custom-surface rounded-full text-xs font-bold border border-custom text-primary"
+              >Bautizos</span
+            >
+            <span
+              class="px-4 py-2 bg-custom-surface rounded-full text-xs font-bold border border-custom text-primary"
+              >Corporativos</span
+            >
+            <span
+              class="px-4 py-2 bg-custom-surface rounded-full text-xs font-bold border border-custom text-primary"
+              >Eventos Sociales</span
+            >
+            <span
+              class="px-4 py-2 bg-custom-surface rounded-full text-xs font-bold border border-custom text-primary"
+              >Selfie Booth Asistido</span
+            >
+            <span
+              class="px-4 py-2 bg-custom-surface rounded-full text-xs font-bold border border-custom text-primary"
+              >Galería Web Drive</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-24 px-4 bg-custom-surface" id="services">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-20">
+          <h2
+            class="text-3xl md:text-4xl font-black dark:text-white text-brand-blue mb-4"
+          >
+            Servicios de Élite
+          </h2>
+          <p class="opacity-70 max-w-2xl mx-auto">
+            Ofrecemos soluciones integrales con estándares de la industria
+            cinematográfica.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-custom-main p-10 rounded-2xl border border-custom hover:border-primary/30 transition-all group shadow-xl"
+          >
+            <div
+              class="size-16 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform shadow-[inset_0_0_20px_rgba(19,236,91,0.1)]"
+            >
+              <span class="material-symbols-outlined text-4xl">videocam</span>
+            </div>
+            <h3 class="text-xl font-bold mb-4 dark:text-white text-brand-blue">
+              Filmación en Vivo
+            </h3>
+            <p class="opacity-70 leading-relaxed">
+              Captura de alta definición con múltiples cámaras y sonido
+              profesional para eventos en tiempo real con estética de cine.
+            </p>
+          </div>
+          <div
+            class="bg-custom-main p-10 rounded-2xl border border-custom hover:border-primary/30 transition-all group shadow-xl"
+          >
+            <div
+              class="size-16 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform shadow-[inset_0_0_20px_rgba(19,236,91,0.1)]"
+            >
+              <span class="material-symbols-outlined text-4xl"
+                >auto_fix_high</span
+              >
+            </div>
+            <h3 class="text-xl font-bold mb-4 dark:text-white text-brand-blue">
+              Edición Profesional
+            </h3>
+            <p class="opacity-70 leading-relaxed">
+              Post-producción avanzada, corrección de color (color grading) y
+              diseño sonoro con acabado de primer nivel.
+            </p>
+          </div>
+          <div
+            class="bg-custom-main p-10 rounded-2xl border border-custom hover:border-primary/30 transition-all group shadow-xl"
+          >
+            <div
+              class="size-16 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform shadow-[inset_0_0_20px_rgba(19,236,91,0.1)]"
+            >
+              <span class="material-symbols-outlined text-4xl">cloud_done</span>
+            </div>
+            <h3 class="text-xl font-bold mb-4 dark:text-white text-brand-blue">
+              Galería Web Drive
+            </h3>
+            <p class="opacity-70 leading-relaxed">
+              Acceso inmediato y seguro a todos tus archivos en alta calidad a
+              través de nuestra plataforma en la nube.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-24 px-4 bg-custom-main" id="pricing">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-20">
+          <span
+            class="text-primary font-bold tracking-[0.3em] uppercase text-xs"
+            >Inversión</span
+          >
+          <h2
+            class="text-3xl md:text-5xl font-black dark:text-white text-brand-blue mt-4 mb-6"
+          >
+            Planes y Paquetes
+          </h2>
+          <p class="opacity-70 max-w-2xl mx-auto">
+            Selecciona la cobertura ideal para tu visión cinematográfica.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
+          <div
+            class="bg-custom-surface p-8 md:p-10 rounded-[2rem] border border-custom flex flex-col hover:translate-y-[-8px] transition-all duration-300"
+          >
+            <h3
+              class="text-2xl font-black dark:text-white text-brand-blue mb-2"
+            >
+              Básico
+            </h3>
+            <p class="opacity-60 mb-6 text-sm">
+              Ideal para eventos sociales íntimos.
+            </p>
+            <div class="mb-8">
+              <span class="text-4xl font-black text-primary">$499</span>
+              <span class="opacity-50 text-sm">/ evento</span>
+            </div>
+            <ul class="space-y-4 mb-10 flex-grow">
+              <li class="flex items-start gap-3 opacity-90 text-sm">
+                <span
+                  class="material-symbols-outlined text-primary text-sm mt-0.5"
+                  >check_circle</span
+                >
+                4 horas de cobertura
+              </li>
+              <li class="flex items-start gap-3 opacity-90 text-sm">
+                <span
+                  class="material-symbols-outlined text-primary text-sm mt-0.5"
+                  >check_circle</span
+                >
+                1 Cámara 4K
+              </li>
+              <li class="flex items-start gap-3 opacity-90 text-sm">
+                <span
+                  class="material-symbols-outlined text-primary text-sm mt-0.5"
+                  >check_circle</span
+                >
+                Video Highlight (3-5 min)
+              </li>
+            </ul>
+            <a
+              class="w-full text-center py-4 border-2 border-primary/30 dark:text-white text-brand-blue rounded-xl font-bold hover:bg-primary hover:text-brand-blue hover:border-primary transition-all"
+              href="https://wa.me/51936649213?text=Hola,%20deseo%20reservar%20el%20paquete%20B%C3%A1sico"
+              target="_blank"
+            >
+              Reservar ahora
+            </a>
+          </div>
+          <div
+            class="bg-custom-surface p-8 md:p-10 rounded-[2rem] pricing-card-highlight flex flex-col relative overflow-hidden scale-105 z-10 shadow-2xl"
+          >
+            <div
+              class="absolute top-0 right-0 bg-primary text-brand-blue font-black text-[10px] px-6 py-1 rotate-45 translate-x-4 translate-y-3 uppercase"
+            >
+              Popular
+            </div>
+            <h3
+              class="text-2xl font-black dark:text-white text-brand-blue mb-2"
+            >
+              Premium
+            </h3>
+            <p class="opacity-60 mb-6 text-sm">
+              La mejor experiencia cinematográfica.
+            </p>
+            <div class="mb-8">
+              <span class="text-4xl font-black text-primary">$899</span>
+              <span class="opacity-50 text-sm">/ evento</span>
+            </div>
+            <ul class="space-y-4 mb-10 flex-grow">
+              <li class="flex items-start gap-3 opacity-90 text-sm">
+                <span
+                  class="material-symbols-outlined text-primary text-sm mt-0.5"
+                  >check_circle</span
+                >
+                8 horas de cobertura
+              </li>
+              <li class="flex items-start gap-3 opacity-90 text-sm">
+                <span
+                  class="material-symbols-outlined text-primary text-sm mt-0.5"
+                  >check_circle</span
+                >
+                2 Cámaras 4K + Drone
+              </li>
+              <li class="flex items-start gap-3 opacity-90 text-sm">
+                <span
+                  class="material-symbols-outlined text-primary text-sm mt-0.5"
+                  >check_circle</span
+                >
+                Película Completa (15-20 min)
+              </li>
+              <li class="flex items-start gap-3 opacity-90 text-sm">
+                <span
+                  class="material-symbols-outlined text-primary text-sm mt-0.5"
+                  >check_circle</span
+                >
+                Corrección de Color Cine
+              </li>
+            </ul>
+            <a
+              class="w-full text-center py-4 bg-primary text-brand-blue rounded-xl font-black shadow-[0_0_20px_rgba(19,236,91,0.3)] hover:scale-105 transition-all"
+              href="https://wa.me/51936649213?text=Hola,%20deseo%20reservar%20el%20paquete%20Premium"
+              target="_blank"
+            >
+              Reservar ahora
+            </a>
+          </div>
+          <div
+            class="bg-custom-surface p-8 md:p-10 rounded-[2rem] border border-custom flex flex-col hover:translate-y-[-8px] transition-all duration-300"
+          >
+            <h3
+              class="text-2xl font-black dark:text-white text-brand-blue mb-2"
+            >
+              Corporativo
+            </h3>
+            <p class="opacity-60 mb-6 text-sm">
+              Impacto visual para tu marca o empresa.
+            </p>
+            <div class="mb-8">
+              <span class="text-4xl font-black text-primary">$1,299</span>
+              <span class="opacity-50 text-sm">/ proyecto</span>
+            </div>
+            <ul class="space-y-4 mb-10 flex-grow">
+              <li class="flex items-start gap-3 opacity-90 text-sm">
+                <span
+                  class="material-symbols-outlined text-primary text-sm mt-0.5"
+                  >check_circle</span
+                >
+                Cobertura de Jornada Completa
+              </li>
+              <li class="flex items-start gap-3 opacity-90 text-sm">
+                <span
+                  class="material-symbols-outlined text-primary text-sm mt-0.5"
+                  >check_circle</span
+                >
+                Motion Graphics &amp; Logotipos
+              </li>
+              <li class="flex items-start gap-3 opacity-90 text-sm">
+                <span
+                  class="material-symbols-outlined text-primary text-sm mt-0.5"
+                  >check_circle</span
+                >
+                Adaptaciones RRSS
+              </li>
+            </ul>
+            <a
+              class="w-full text-center py-4 border-2 border-primary/30 dark:text-white text-brand-blue rounded-xl font-bold hover:bg-primary hover:text-brand-blue hover:border-primary transition-all"
+              href="https://wa.me/51936649213?text=Hola,%20deseo%20reservar%20el%20paquete%20Corporativo"
+              target="_blank"
+            >
+              Reservar ahora
+            </a>
+          </div>
+        </div>
+        <div class="max-w-5xl mx-auto">
+          <div class="flex items-center gap-4 mb-10">
+            <div class="h-px bg-primary/20 flex-grow"></div>
+            <h3
+              class="text-2xl font-black dark:text-white text-brand-blue uppercase tracking-widest italic"
+            >
+              Adicionales
+            </h3>
+            <div class="h-px bg-primary/20 flex-grow"></div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div
+              class="bg-custom-surface p-6 rounded-2xl border border-custom hover:border-primary/20 transition-all flex items-start gap-4"
+            >
+              <div class="text-primary mt-1">
+                <span class="material-symbols-outlined">camera_front</span>
+              </div>
+              <div>
+                <h4
+                  class="dark:text-white text-brand-blue font-bold text-sm mb-1"
+                >
+                  Selfie Booth
+                </h4>
+                <p class="opacity-60 text-xs leading-relaxed">
+                  Cabina fotográfica interactiva con asistencia para tus
+                  invitados.
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-custom-surface p-6 rounded-2xl border border-custom hover:border-primary/20 transition-all flex items-start gap-4"
+            >
+              <div class="text-primary mt-1">
+                <span class="material-symbols-outlined">rocket_launch</span>
+              </div>
+              <div>
+                <h4
+                  class="dark:text-white text-brand-blue font-bold text-sm mb-1"
+                >
+                  Drone 4K
+                </h4>
+                <p class="opacity-60 text-xs leading-relaxed">
+                  Tomas aéreas espectaculares que elevan el valor de producción.
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-custom-surface p-6 rounded-2xl border border-custom hover:border-primary/20 transition-all flex items-start gap-4"
+            >
+              <div class="text-primary mt-1">
+                <span class="material-symbols-outlined">bolt</span>
+              </div>
+              <div>
+                <h4
+                  class="dark:text-white text-brand-blue font-bold text-sm mb-1"
+                >
+                  Entrega Express
+                </h4>
+                <p class="opacity-60 text-xs leading-relaxed">
+                  Tu video final editado y listo en menos de 7 días hábiles.
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-custom-surface p-6 rounded-2xl border border-custom hover:border-primary/20 transition-all flex items-start gap-4"
+            >
+              <div class="text-primary mt-1">
+                <span class="material-symbols-outlined">cloud</span>
+              </div>
+              <div>
+                <h4
+                  class="dark:text-white text-brand-blue font-bold text-sm mb-1"
+                >
+                  Galería Drive
+                </h4>
+                <p class="opacity-60 text-xs leading-relaxed">
+                  Respaldo digital y acceso móvil a toda tu producción.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-24 px-4 bg-custom-main" id="portfolio">
+      <div class="max-w-7xl mx-auto">
+        <div
+          class="flex flex-col md:flex-row justify-between items-end gap-6 mb-16"
+        >
+          <div>
+            <h2
+              class="text-3xl md:text-4xl font-black dark:text-white text-brand-blue mb-4"
+            >
+              Nuestro Portafolio
+            </h2>
+            <p class="opacity-70">
+              Una galería de experiencias visuales únicas.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-3">
+            <button
+              class="px-6 py-2 rounded-full bg-primary text-brand-blue font-bold text-sm shadow-lg"
+            >
+              Todos
+            </button>
+            <button
+              class="px-6 py-2 rounded-full bg-custom-surface border border-custom hover:border-primary/50 dark:text-gray-300 text-brand-blue hover:text-primary transition-all font-bold text-sm"
+            >
+              Bodas
+            </button>
+            <button
+              class="px-6 py-2 rounded-full bg-custom-surface border border-custom hover:border-primary/50 dark:text-gray-300 text-brand-blue hover:text-primary transition-all font-bold text-sm"
+            >
+              Social
+            </button>
+            <button
+              class="px-6 py-2 rounded-full bg-custom-surface border border-custom hover:border-primary/50 dark:text-gray-300 text-brand-blue hover:text-primary transition-all font-bold text-sm"
+            >
+              Corporativo
+            </button>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="aspect-video bg-custom-surface rounded-2xl overflow-hidden group relative border border-custom"
+          >
+            <div
+              class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-100"
+              style="
+                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAXI7yKmLxpSXesaExv1y76Ux7ag63Lw-FG4AI0CpcDGztseDr99tDXPoUlBYEmhZxt8pZq7UmfhtdNt4DkiP-BslfSlPKh2OVREfIe95_0MEFyQu10onAjoHjMeSnGL6mln-bRX2bDcBtEfwRggRxpGQZwNMaR1gT22s1HTqYd4vrgAflBzS-Ogy3GmC_WOl0Jm1W42atDqDaM96olSkt0P2If5yqzh56HOhywBeL5rXEv6xi3DM_4WooK-O10uR1uyKw-tXc4x3QK');
+              "
+            ></div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-brand-blue/90 via-brand-blue/20 to-transparent opacity-0 group-hover:opacity-100 transition-all flex items-end p-8"
+            >
+              <h4 class="text-white font-bold text-xl">
+                Boda Real: Ana &amp; Luis
+              </h4>
+            </div>
+          </div>
+          <div
+            class="aspect-video bg-custom-surface rounded-2xl overflow-hidden group relative border border-custom"
+          >
+            <div
+              class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-100"
+              style="
+                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA3mYyIcLxGU-6ttC5Eh7wMG6AnxaYVNs4PYzC0-Z7eoKHAumL1y7FVv5X3axAbQm4hyohs6Lz-x5B1Cvlqtep-kd4PEWbiMpxfZXQdQKsO_pYUhtXEOoE-DIBmSL2eY90dsjR-g1f_2Qt3v3MVl_CA4toeV84WQ_ukVcikKbGeDu7yJuzlAcEdhmdgsG-gCc5rHlQXXDDwyRS776amr5I0aKhe9xcKMEk2Itd9C2Q-txYP84DeXxIdGJ94PTkXags1W0dQ0ZPHbecA');
+              "
+            ></div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-brand-blue/90 via-brand-blue/20 to-transparent opacity-0 group-hover:opacity-100 transition-all flex items-end p-8"
+            >
+              <h4 class="text-white font-bold text-xl">Tech Summit 2023</h4>
+            </div>
+          </div>
+          <div
+            class="aspect-video bg-custom-surface rounded-2xl overflow-hidden group relative border border-custom"
+          >
+            <div
+              class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-100"
+              style="
+                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAaJOR6AGNefbz8sl_kPMm2Rd70i-PIEYg5htsd4_eEGdYlixCOeBAZL2FYJlHk-DwfMqvv3-Nj8hI8DEphE8oySwqWU5RtsdARcsRd4je-xQzD1a9b8hy3IYioQYU7S5UByV6bfBGN6f1b7ftiVMf6DF0FMVztyU0qWD616lzcoC5bqyaTEMGDOxgIaONdKWkTf9z5hEgIOWDWsQrE3Gw-1tEa__spYl8aclLwAZVoqQArEeThJJYyS8QATYsTmMPwaWbLy3KJWvXw');
+              "
+            ></div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-brand-blue/90 via-brand-blue/20 to-transparent opacity-0 group-hover:opacity-100 transition-all flex items-end p-8"
+            >
+              <h4 class="text-white font-bold text-xl">
+                Music Sessions: Vol 4
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-20 px-4">
+      <div
+        class="max-w-7xl mx-auto cta-gradient rounded-[2rem] p-8 md:p-20 text-center shadow-2xl overflow-hidden relative border border-white/10"
+      >
+        <div class="relative z-10">
+          <h2 class="text-white text-3xl md:text-5xl font-black mb-8">
+            ¿Tienes un proyecto en mente?
+          </h2>
+          <p
+            class="text-white/90 text-lg md:text-xl mb-12 max-w-2xl mx-auto font-light"
+          >
+            Hagamos que tu próximo evento sea inolvidable con una producción de
+            primer nivel.
+          </p>
+          <a
+            class="inline-flex bg-white text-brand-blue px-12 py-5 rounded-2xl font-black text-lg hover:bg-gray-100 transition-all items-center gap-3 shadow-2xl transform hover:scale-105"
+            href="https://wa.me/51936649213?text=Hola,%20deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios"
+            target="_blank"
+          >
+            <span class="material-symbols-outlined text-green-500">chat</span>
+            Solicitar información
+          </a>
+        </div>
+        <div
+          class="absolute -top-24 -left-24 w-80 h-80 bg-white/10 rounded-full blur-[80px]"
+        ></div>
+        <div
+          class="absolute -bottom-24 -right-24 w-80 h-80 bg-brand-blue/20 rounded-full blur-[80px]"
+        ></div>
+      </div>
+    </section>
+    <section class="py-24 px-4 bg-custom-main" id="faq">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-20">
+          <h2
+            class="text-3xl md:text-4xl font-black dark:text-white text-brand-blue mb-4"
+          >
+            Preguntas Frecuentes
+          </h2>
+          <p class="opacity-70">
+            Todo lo que necesitas saber sobre nuestras producciones.
+          </p>
+        </div>
+        <div class="space-y-4">
+          <details
+            class="group bg-custom-surface rounded-2xl border border-custom overflow-hidden transition-all duration-300"
+          >
+            <summary
+              class="flex items-center justify-between p-6 cursor-pointer list-none hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
+            >
+              <h3 class="text-lg font-bold dark:text-white text-brand-blue">
+                ¿Qué incluyen los paquetes?
+              </h3>
+              <span
+                class="material-symbols-outlined text-primary arrow-icon transition-transform duration-300"
+                >expand_more</span
+              >
+            </summary>
+            <div
+              class="px-6 pb-6 opacity-70 leading-relaxed border-t border-custom pt-4"
+            >
+              Nuestros paquetes incluyen cobertura profesional, edición
+              cinematográfica y entrega digital. Consulta cada plan para
+              detalles específicos de cámaras y horas.
+            </div>
+          </details>
+          <details
+            class="group bg-custom-surface rounded-2xl border border-custom overflow-hidden transition-all duration-300"
+          >
+            <summary
+              class="flex items-center justify-between p-6 cursor-pointer list-none hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
+            >
+              <h3 class="text-lg font-bold dark:text-white text-brand-blue">
+                ¿Hacen entregas en USB o físico?
+              </h3>
+              <span
+                class="material-symbols-outlined text-primary arrow-icon transition-transform duration-300"
+                >expand_more</span
+              >
+            </summary>
+            <div
+              class="px-6 pb-6 opacity-70 leading-relaxed border-t border-custom pt-4"
+            >
+              Priorizamos la entrega digital vía Google Drive/Galería Web por su
+              rapidez, pero ofrecemos la opción de entrega en USB personalizado
+              como un adicional para quienes deseen un recuerdo físico.
+            </div>
+          </details>
+          <details
+            class="group bg-custom-surface rounded-2xl border border-custom overflow-hidden transition-all duration-300"
+          >
+            <summary
+              class="flex items-center justify-between p-6 cursor-pointer list-none hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
+            >
+              <h3 class="text-lg font-bold dark:text-white text-brand-blue">
+                ¿Cómo se realiza el pago?
+              </h3>
+              <span
+                class="material-symbols-outlined text-primary arrow-icon transition-transform duration-300"
+                >expand_more</span
+              >
+            </summary>
+            <div
+              class="px-6 pb-6 opacity-70 leading-relaxed border-t border-custom pt-4"
+            >
+              El proceso se inicia con una reserva del 30% para asegurar la
+              fecha. El saldo restante se cancela el día del evento o previo a
+              la entrega final, según el tipo de proyecto.
+            </div>
+          </details>
+          <details
+            class="group bg-custom-surface rounded-2xl border border-custom overflow-hidden transition-all duration-300"
+          >
+            <summary
+              class="flex items-center justify-between p-6 cursor-pointer list-none hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
+            >
+              <h3 class="text-lg font-bold dark:text-white text-brand-blue">
+                ¿Puedo elegir la música de mi video?
+              </h3>
+              <span
+                class="material-symbols-outlined text-primary arrow-icon transition-transform duration-300"
+                >expand_more</span
+              >
+            </summary>
+            <div
+              class="px-6 pb-6 opacity-70 leading-relaxed border-t border-custom pt-4"
+            >
+              ¡Por supuesto! Trabajamos de la mano contigo para que la banda
+              sonora refleje tu estilo. También contamos con catálogos de música
+              libre de derechos para que no tengas problemas al compartirlo en
+              redes sociales.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+    <section class="py-24 px-4 bg-custom-surface" id="contact">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div>
+          <h2 class="text-4xl font-black dark:text-white text-brand-blue mb-6">
+            Contáctanos
+          </h2>
+          <p class="opacity-70 mb-12 text-lg">
+            Estamos listos para escucharte. Completa el formulario y nos
+            pondremos en contacto contigo lo antes posible vía WhatsApp.
+          </p>
+          <div class="space-y-8">
+            <div class="flex items-center gap-5">
+              <div
+                class="size-14 bg-primary/10 border border-primary/20 rounded-2xl flex items-center justify-center text-primary"
+              >
+                <span class="material-symbols-outlined text-2xl">call</span>
+              </div>
+              <div>
+                <p
+                  class="text-xs font-bold opacity-50 uppercase tracking-widest mb-1"
+                >
+                  Llámanos
+                </p>
+                <p class="text-xl font-bold dark:text-white text-brand-blue">
+                  +51 936 649 213
+                </p>
+              </div>
+              
+            </div>
+            <div class="flex items-center gap-5">
+                <div
+                  class="size-14 bg-primary/10 border border-primary/20 rounded-2xl flex items-center justify-center text-primary"
+                >
+                  <span class="material-symbols-outlined text-2xl">call</span>
+                </div>
+                <div>
+                  <p
+                    class="text-xs font-bold opacity-50 uppercase tracking-widest mb-1"
+                  >
+                    Llámanos
+                  </p>
+                  <p class="text-xl font-bold dark:text-white text-brand-blue">
+                    +51 919 038 020
+                  </p>
+                </div>
+                
+              </div>
+            <div class="flex items-center gap-5">
+              <div
+                class="size-14 bg-primary/10 border border-primary/20 rounded-2xl flex items-center justify-center text-primary"
+              >
+                <span class="material-symbols-outlined text-2xl">mail</span>
+              </div>
+              <div>
+                <p
+                  class="text-xs font-bold opacity-50 uppercase tracking-widest mb-1"
+                >
+                  Email
+                </p>
+                <p class="text-xl font-bold dark:text-white text-brand-blue">
+                    byd.producciones.hyo@gmail.com
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-custom-main p-8 md:p-12 rounded-[2rem] shadow-2xl border border-custom"
+        >
+          <form class="space-y-6" id="whatsappForm">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm font-bold mb-3 opacity-60"
+                  >Nombre Completo</label
+                >
+                <input
+                  class="w-full bg-custom-surface border border-custom rounded-xl focus:ring-2 focus:ring-primary p-4 outline-none transition-all dark:text-white text-brand-blue"
+                  id="formName"
+                  placeholder="Tu nombre"
+                  required=""
+                  type="text"
+                />
+              </div>
+              <div>
+                <label class="block text-sm font-bold mb-3 opacity-60"
+                  >Teléfono / WhatsApp</label
+                >
+                <input
+                  class="w-full bg-custom-surface border border-custom rounded-xl focus:ring-2 focus:ring-primary p-4 outline-none transition-all dark:text-white text-brand-blue"
+                  id="formPhone"
+                  placeholder="+51"
+                  required=""
+                  type="tel"
+                />
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm font-bold mb-3 opacity-60"
+                  >Fecha Tentativa</label
+                >
+                <input
+                  class="w-full bg-custom-surface border border-custom rounded-xl focus:ring-2 focus:ring-primary p-4 outline-none transition-all dark:text-white text-brand-blue"
+                  id="formDate"
+                  required=""
+                  type="date"
+                />
+              </div>
+              <div>
+                <label class="block text-sm font-bold mb-3 opacity-60"
+                  >Tipo de Evento</label
+                >
+                <select
+                  class="w-full bg-custom-surface border border-custom rounded-xl focus:ring-2 focus:ring-primary p-4 outline-none transition-all dark:text-white text-brand-blue"
+                  id="formEvent"
+                >
+                  <option value="Boda">Boda</option>
+                  <option value="Social">Social / Fiesta</option>
+                  <option value="Corporativo">Corporativo</option>
+                  <option value="Publicidad">Publicidad</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm font-bold mb-3 opacity-60"
+                >Detalles del Proyecto</label
+              >
+              <textarea
+                class="w-full bg-custom-surface border border-custom rounded-xl focus:ring-2 focus:ring-primary p-4 outline-none transition-all dark:text-white text-brand-blue"
+                id="formDetails"
+                placeholder="Cuéntanos un poco más..."
+                rows="4"
+              ></textarea>
+            </div>
+            <button
+              class="w-full bg-[#25D366] text-white py-5 rounded-2xl font-black text-lg hover:brightness-110 transition-all flex items-center justify-center gap-3 shadow-lg transform hover:-translate-y-1"
+              type="submit"
+            >
+              <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217s.231.001.332.005c.109.004.258-.041.405.314.159.386.541 1.32.588 1.422.047.101.078.22.011.354-.067.134-.101.217-.201.333-.1.116-.21.26-.3.346-.098.096-.2.197-.087.393.116.196.512.846 1.102 1.371.758.676 1.397.886 1.594.984.197.098.312.081.426-.052.116-.133.497-.578.631-.774.133-.197.266-.164.448-.098.182.066 1.154.544 1.354.644.199.101.332.15.38.232.049.083.049.479-.095.884z"
+                ></path>
+              </svg>
+              Enviar por WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-black/95 dark:bg-black py-16 px-4 border-t border-custom">
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10"
+      >
+        <div class="flex items-center gap-3">
+          <div
+            class="size-8 bg-primary rounded flex items-center justify-center text-brand-blue shadow-[0_0_10px_rgba(19,236,91,0.3)]"
+          >
+            <span class="material-symbols-outlined font-bold">videocam</span>
+          </div>
+          <span class="text-white text-xl font-black tracking-tighter uppercase"
+            >B &amp; D PRODUCCIONES</span
+          >
+        </div>
+        <div class="flex gap-8">
+          <a class="text-gray-500 hover:text-primary transition-all" href="#">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+              >
+            </path>
+              </svg
+          ></a>
+          <a class="text-gray-500 hover:text-primary transition-all" href="#">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+              >
+            </path>
+            </svg
+          ></a>
+        </div>
+        <p class="text-gray-600 text-sm">
+          © 2024 B &amp; D Producciones. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+    <a
+      class="fixed bottom-8 right-8 size-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all z-50 border-2 border-white/20"
+      href="https://wa.me/51936649213?text=Hola,%20deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios"
+      target="_blank"
+    >
+      <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24">
+        <path
+          d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217s.231.001.332.005c.109.004.258-.041.405.314.159.386.541 1.32.588 1.422.047.101.078.22.011.354-.067.134-.101.217-.201.333-.1.116-.21.26-.3.346-.098.096-.2.197-.087.393.116.196.512.846 1.102 1.371.758.676 1.397.886 1.594.984.197.098.312.081.426-.052.116-.133.497-.578.631-.774.133-.197.266-.164.448-.098.182.066 1.154.544 1.354.644.199.101.332.15.38.232.049.083.049.479-.095.884z"
+        ></path>
+      </svg>
+    </a>
+  </body>
+  <script src="js/script.js"></script>
+  <script src="js/tailwind.js"></script>
+</html>
